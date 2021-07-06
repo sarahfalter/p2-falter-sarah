@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*************COLORS**********
+
+primary-red: #E6032D
+blue: #CFE4FF
+dark-gray: #333333
+light: #f7f7f7
+
+***********************************/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: 10%;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2, h2, h4, h5, p, a {
+    font-family: proxima-nova, sans-serif;
+}
+
+.disclaimer {
+    background: #E6032D;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 1% 0;
+}
+
+.disclaimer a {
+    color: #f7f7f7;
+    text-decoration: underline;
+}
+
+nav {
+    display: none;
+}
+.logo {
+    width: 50px;
+    margin-left: 6%;
+    padding: 1%;
+}
+
+.hero h1, .cta {
+    text-align: center;
+    margin: 0 auto;
+    color: #f7f7f7;
+}
+
+.hero {
+    background: url(images/met-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 83vh;
+}
+
+.hero h1 {
+    padding-top: 200px;
+}
+
+.cta {
+    display: block;
+    border: 1px solid #f7f7f7;
+    border-radius: 7px;
+    width: 190px;
+    padding: 3px 0;
+    margin-top: 1%;
+}
+
+.open {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 4%;
+}
+
+.open h2 {
+    color: #E6032D;
+}
+
+.purchase-ticket {
+    justify-self: flex-end;
+    color: #E6032D;
+}
+
+a.purchase-ticket:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #E6032D;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a.purchase-ticket:hover:before {
+      visibility: visible;
+      width: 100%;
+    }
+
+.last {
+    background: #CFE4FF;
+    width: 600px;
+}
+/***********CARD SECTION**/
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin: 3% auto;
+    height: 404px;
+    box-shadow: 6px 5px 5px #00000030;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.fit {
+    object-fit: cover;
+}
+
+.card img {
+    height: 100%;
+}
+
+.left-side:hover,
+.right-side:hover {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.left-side, .right-side {
+ 
+    position: relative;
+    overflow: hidden;
+}
+.card-text-left,
+.card-text-right {
+    position: absolute;
+    z-index: 9999;
+    color: #f7f7f7;
+    font-size: 2rem;
+}
+
+.card-text-left {
+    left: 2%;
+    top: 55%;
+    border-bottom: 2px solid #E6032D;
+}
+
+.card-text-right {
+    right: 2%;
+    top: 15%;
+    border-top: 2px solid #E6032D;
+}
+
+
+/**********************
+
+Footer Styles
+
+************************/
+
+.footer-left,
+.footer-locations,
+.footer-socials {
+    background: #f7f7f7;
+    text-align: center;
+    line-height: 2.2;
+    padding: 4% 0;
+    box-shadow: 2px 13px 18px #00000099;
+}
+
+.footer-left a {
+    color: #333333;
+    font-weight: bold;
+    line-height: 2.5;
+}
+
+.footer-socials a {
+    font-size: 2rem;
+    color: #333333;
+    margin: 0 1%;
+}
+
+.footer-bottom {
+    background: #333333;
+    color: #CFE4FF;
+    text-align: center;
+    padding: 2% 0;
+}
+
+@media (min-width: 450px){
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+   
+}
+
+@media (min-width: 700px) {
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    nav {
+        justify-self: end;
+        margin-right: 20%;
+        display: block;
+    }
+    nav ul {
+        display: inline-flex;  
+    }
+    
+    nav ul li {
+        padding: 5% 20%;
+    }
+    
+    nav ul li a {
+        color: #E6032D;
+        position: relative;
+    }
+    
+    
+    
+}
+/********************
+1000px QUERY
+
+***********************/
+
+
+@media (min-width: 1000px) {
+ 
+
+/*Makes underline go from left to right on hover*/
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #E6032D;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+
+h1 {
+    font-size: 4rem;
+    padding-top: 15%;
+}
+.cta {
+    display: block;
+    border: 1px solid #f7f7f7;
+    border-radius: 7px;
+    padding: 3px 0;
+}
+
+.cta:hover {
+    background: #333333;
+    color: #CFE4FF;
+    transition: all 0.4s ease;
+    border: 1px solid #333333;
+}
+}
+
+@media (max-width: 600px) {
+    .card {
+        display: block;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
