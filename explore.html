@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore | The Met</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mor6xox.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/312ed6c8c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="disclaimer">
+            <p>Masks are required at all of our locations. View our COVID-19 Policy <a href="#">here.</a></p>
+        </div>
+
+        <div class="navigation">
+            <a href="index.html"><img class="logo" src="images/met-logo.png" title="The Met Logo" alt="The Met Logo"/></a>
+             <nav>
+               <ul>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Visit</a></li>
+               </ul>
+             </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-sub">         
+            <h1>Explore</h1>
+            <span></span>
+        </div>
+
+        <div class="explore-intro">
+            <ul>
+                <li><a href="#inside">Look Inside</a></li>
+                <li><a href="#inside">Exhibitions</a></li>
+                <li><a href="#inside">Learn</a></li>
+            </ul>
+            <p>
+                The Metropolitan Museum of Art was founded in 1870 to bring art and art education to the American people. Now The Met revolutionizes art education by providing its entire collection online for the public's disposal. Visit the open access collection here.
+            </p>
+        </div>
+
+
+
+   <!-- Images used to open the lightbox -->
+       <div class="wrapper">
+           <h2>Get an Inside Look</h2>
+        <div class="row">
+            <div class="column">
+            <img src="images/fifthave.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            <p>
+                Open Gallery
+            </p>
+            </div>
+            <div class="column hide">
+            <img src="images/fifthave.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column hide">
+            <img src="images/fifthave.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column hide">
+            <img src="images/fifthave.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+    
+       </div>
+  
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/fifthave.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/fifthave.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/fifthave.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/fifthave.jpg" style="width:100%">
+              </div>
+          
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <!-- Caption text -->
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+              <!-- Thumbnail image controls -->
+              <div class="column">
+                <img class="demo" src="images/fifthave.jpg" onclick="currentSlide(1)" alt="Nature">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="images/fifthave.jpg" onclick="currentSlide(2)" alt="Snow">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="images/fifthave.jpg" onclick="currentSlide(3)" alt="Mountains">
+              </div>
+          
+              <div class="column">
+                <img class="demo" src="images/fifthave.jpg" onclick="currentSlide(4)" alt="Lights">
+              </div>
+            </div>
+          </div>
+
+
+          <section class="exhibits">
+            <h2>Current Exhibits</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openArt(event, 'exhibit-1')">London</button>
+                <button class="tablinks" onclick="openArt(event, 'exhibit-2')">Paris</button>
+                <button class="tablinks" onclick="openArt(event, 'exhibit-3')">Tokyo</button>
+              </div>
+              
+              <div id="exhibit-1" class="tabcontent">
+                <img src="images/dutch.PNG" alt="Dutch Masterpieces at the Met" width="500">
+                <h3>In Praise of Painting: Dutch Masterpieces at the Met</h3>
+                <p>Ongoing The Met Fifth Avenue</p>
+                <p>
+                    Dutch paintings of the seventeenth century—the Golden Age of Rembrandt, Hals, and Vermeer—have been a highlight of The Met collection since the Museum's founding purchase in 1871. This exhibition brings together some of the Museum's greatest paintings to present this remarkable chapter of art history in a new light. Through sixty-seven works of art organized thematically, In Praise of Painting orients visitors to key issues in seventeenth-century Dutch culture—from debates about religion and conspicuous consumption to painters' fascination with the domestic lives of women.
+                </p>
+              </div>
+              
+              <div id="exhibit-2" class="tabcontent hide">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+              </div>
+              
+              <div id="exhibit-3" class="tabcontent hide">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+          </section>
+
+          <section class="learn">
+              <h2>Learn</h2>
+              
+               <div class="videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3CxZ2PrXQ1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <div class="videos"></div>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/hendaPFEG3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <div class="videos"></div>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/MQtSDLOg05c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+          </section>
+        </main>
+    <script src="main.js"></script>
+</body>
+</html>
