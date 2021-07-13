@@ -1,3 +1,34 @@
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+document.getElementById("dropbtn").addEventListener("click", function() {
+  var subMenu = document.getElementById("menuDropdown").style.display = "block";
+}
+);
+
+
+
+
+
+document.getElementById("myBtn").addEventListener("click", function(){   
+  
+var dots = document.getElementById("dots");
+var moreText = document.getElementById("more");
+var btnText = document.getElementById("myBtn");
+
+if (dots.style.display === "none") {
+  dots.style.display = "inline";
+  btnText.innerHTML = "Read more";
+  moreText.style.display = "none";
+} else {
+  dots.style.display = "none";
+  btnText.innerHTML = "Read less";
+  moreText.style.display = "inline";
+   }
+  }
+  );
+
+ 
+
 // Open the Modal
 function openModal() {
     document.getElementById("myModal").style.display = "block";
@@ -41,24 +72,20 @@ function openModal() {
 
 
 
-  function openArt(evt, _exhibitName) {
-    // Declare all variables
+  function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
-  
-    // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
   
-    // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
   
-    // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(_exhibitName).style.display = "block";
+
+    document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
   

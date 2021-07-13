@@ -31,7 +31,7 @@
     <main>
         <div class="hero-sub">         
             <h1>Explore</h1>
-            <span></span>
+            <span class="hero-line"></span>
         </div>
 
         <div class="explore-intro">
@@ -50,7 +50,7 @@
    <!-- Images used to open the lightbox -->
        <div class="wrapper">
            <h2>Get an Inside Look</h2>
-        <div class="row">
+        <div class="row zoom">
             <div class="column">
             <img src="images/fifthave.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
             <p>
@@ -58,17 +58,15 @@
             </p>
             </div>
             <div class="column hide">
-            <img src="images/fifthave.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            <img src="images/slide-1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
             </div>
             <div class="column hide">
-            <img src="images/fifthave.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            <img src="images/slide-2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
             </div>
             <div class="column hide">
-            <img src="images/fifthave.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            <img src="images/slide-3.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
             </div>
         </div>
-    
-       </div>
   
 
         <div id="myModal" class="modal">
@@ -76,23 +74,41 @@
             <div class="modal-content">
           
               <div class="mySlides">
-                <div class="numbertext">1 / 4</div>
-                <img src="images/fifthave.jpg" style="width:100%">
+                <div class="numbertext">1 / 7</div>
+                <img src="images/slide-1.jpg" width="600">
               </div>
           
               <div class="mySlides">
-                <div class="numbertext">2 / 4</div>
-                <img src="images/fifthave.jpg" style="width:100%">
+                <div class="numbertext">2 / 7</div>
+                <img src="images/slide-2.jpg" width="600">
               </div>
           
               <div class="mySlides">
-                <div class="numbertext">3 / 4</div>
-                <img src="images/fifthave.jpg" style="width:100%">
+                <div class="numbertext">3 / 7</div>
+                <img src="images/slide-3.jpg" width="600">
               </div>
           
               <div class="mySlides">
-                <div class="numbertext">4 / 4</div>
-                <img src="images/fifthave.jpg" style="width:100%">
+                <div class="numbertext">4 / 7</div>
+                <img src="images/slide-4.jpg" width="600">
+              </div>
+
+              
+              <div class="mySlides">
+                <div class="numbertext">5 / 7</div>
+                <img src="images/slide-5.jpg" width="600">
+              </div>
+
+              
+              <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img src="images/slide-6.jpg" width="600">
+              </div>
+
+              
+              <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <img src="images/slide-7.jpg" width="600">
               </div>
           
               <!-- Next/previous controls -->
@@ -106,51 +122,151 @@
           
               <!-- Thumbnail image controls -->
               <div class="column">
-                <img class="demo" src="images/fifthave.jpg" onclick="currentSlide(1)" alt="Nature">
+                <img class="demo" src="images/slide-1.jpg" onclick="currentSlide(1)" alt="Nature">
               </div>
           
               <div class="column">
-                <img class="demo" src="images/fifthave.jpg" onclick="currentSlide(2)" alt="Snow">
+                <img class="demo" src="images/slide-2.jpg" onclick="currentSlide(2)" alt="Snow">
               </div>
           
               <div class="column">
-                <img class="demo" src="images/fifthave.jpg" onclick="currentSlide(3)" alt="Mountains">
+                <img class="demo" src="images/slide-3.jpg" onclick="currentSlide(3)" alt="Mountains">
               </div>
           
               <div class="column">
-                <img class="demo" src="images/fifthave.jpg" onclick="currentSlide(4)" alt="Lights">
+                <img class="demo" src="images/slide-4.jpg" onclick="currentSlide(4)" alt="Lights">
+              </div>
+            </div>
+          </div>
+
+          <!--Tabbed Content for Mobile-->
+        
+        <section class="tabbed-content">
+          <h2>Exhibitions</h2>
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+          </div>
+
+          <div id="London" class="tabcontent">
+            <h3>Dutch Masterpieces</h3>
+            <img src="images/dutch.PNG" alt="Dutch Masterpieces" width="300">
+            <p>Ongoing The Met Fifth Avenue</p>
+            <p>
+                Dutch paintings of the seventeenth century—the Golden Age of Rembrandt, Hals, and Vermeer—have been a highlight of The Met collection since the Museum's founding purchase in 1871. This exhibition brings together some of the Museum's greatest paintings to present this remarkable chapter of art history in a new light. Through sixty-seven works of art organized thematically, In Praise of Painting orients visitors to key issues in seventeenth-century Dutch culture—from debates about religion and conspicuous consumption to painters' fascination with the domestic lives of women.
+            </p>
+          </div>
+
+          <div id="Paris" class="tabcontent">
+            <img src="images/facade-commission.PNG" alt="The Facade Commission" width="300">
+            <h3>The Facade Commission</h3>
+            <p>Ongoing The Met Fifth Avenue</p>
+
+            <p>
+              Created by the artist Carol Bove (born 1971), The séances aren’t helping is the second commission to be featured on the facade of The Met Fifth Avenue. Working improvisationally, Bove sculpts at scale and in the round, without any preparatory drawings. For this commission, she used a one-to-one mock-up of the Museum’s empty niches to construct four abstract sculptures made of sandblasted, contorted stainless-steel tubes and five-foot-wide reflective aluminum disks. Despite the weight and heft of these sculptures, they appear astoundingly lithe and supple, almost mercurial—an effect Bove achieves by pushing her materials to their physical limits.
+            </p>
+          </div>
+
+          <div id="Tokyo" class="tabcontent">
+            <img src="images/medici.PNG" alt="Medici Exhibition" width="300">
+            <h3>The Medici: Portraits and Politics</h3>
+            <p>Ongoing The Met Fifth Avenue</p>
+  
+            <p>
+              Some of the greatest portraits of Western art were painted in Florence during the tumultuous years from 1512 to 1570, when the city was transformed from a republic with elected officials into a duchy ruled by the Medici family. The key figure in this transformation was Cosimo I de’ Medici, who became Duke of Florence in 1537, following the assassination of his predecessor, Alessandro de’ Medici. Cosimo shrewdly employed culture as a political tool in order to convert the mercantile city into the capital of a dynastic Medicean state, enlisting the leading intellectuals and artists of his time and promoting grand architectural, engineering, and artistic projects. 
+            </p>
+          </div>
+
+          <div id="Tokyo" class="tabcontent">
+            <img src="images/people-first.PNG" alt="People Come First" width="300">
+            <h3>Alice Neel People Come First</h3>
+            <p>Ongoing The Met Fifth Avenue</p>
+        
+    
+            <p>
+              Alice Neel: People Come First is the first museum retrospective in New York of American artist Alice Neel (1900–1984) in twenty years.
+              Images of activists demonstrating against fascism and racism appear alongside paintings of impoverished victims of the Great Depression, as well as portraits of Neel’s neighbors in Spanish Harlem, leaders from a wide range of political organizations, queer artists and performers, and members of New York’s global diaspora. The exhibition also highlights Neel’s erotic watercolors and pastels from the 1930s, her depictions of mothers, and her paintings of nude figures (some of them visibly pregnant), all of whose candor and irreverence are without precedent in the history of Western art.
+            </p>
+          </div>
+        </section>
+
+        <h2 class="h-ex">Exhibitions</h2>
+        <section class="desktop-exhibits">
+          
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/dutch.PNG" alt="Dutch Masterpieces" width="300">
+                <h3>Dutch Masterpieces</h3>
+                <p>Ongoing The Met Fifth Avenue</p>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                    Dutch paintings of the seventeenth century—the Golden Age of Rembrandt, Hals, and Vermeer—have been a highlight of The Met collection since the Museum's founding purchase in 1871. This exhibition brings together some of the Museum's greatest paintings to present this remarkable chapter of art history in a new light. Through sixty-seven works of art organized thematically, In Praise of Painting orients visitors to key issues in seventeenth-century Dutch culture—from debates about religion and conspicuous consumption to painters' fascination with the domestic lives of women.
+                </p>
               </div>
             </div>
           </div>
 
 
-          <section class="exhibits">
-            <h2>Current Exhibits</h2>
-            <div class="tab">
-                <button class="tablinks" onclick="openArt(event, 'exhibit-1')">London</button>
-                <button class="tablinks" onclick="openArt(event, 'exhibit-2')">Paris</button>
-                <button class="tablinks" onclick="openArt(event, 'exhibit-3')">Tokyo</button>
-              </div>
-              
-              <div id="exhibit-1" class="tabcontent">
-                <img src="images/dutch.PNG" alt="Dutch Masterpieces at the Met" width="500">
-                <h3>In Praise of Painting: Dutch Masterpieces at the Met</h3>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/facade-commission.PNG" alt="The Facade Commission" width="300">
+                <h3>The Facade Commission</h3>
                 <p>Ongoing The Met Fifth Avenue</p>
+              </div>
+              <div class="flip-card-back">
                 <p>
-                    Dutch paintings of the seventeenth century—the Golden Age of Rembrandt, Hals, and Vermeer—have been a highlight of The Met collection since the Museum's founding purchase in 1871. This exhibition brings together some of the Museum's greatest paintings to present this remarkable chapter of art history in a new light. Through sixty-seven works of art organized thematically, In Praise of Painting orients visitors to key issues in seventeenth-century Dutch culture—from debates about religion and conspicuous consumption to painters' fascination with the domestic lives of women.
+                  Created by the artist Carol Bove (born 1971), The séances aren’t helping is the second commission to be featured on the facade of The Met Fifth Avenue. Working improvisationally, Bove sculpts at scale and in the round, without any preparatory drawings. For this commission, she used a one-to-one mock-up of the Museum’s empty niches to construct four abstract sculptures made of sandblasted, contorted stainless-steel tubes and five-foot-wide reflective aluminum disks. Despite the weight and heft of these sculptures, they appear astoundingly lithe and supple, almost mercurial—an effect Bove achieves by pushing her materials to their physical limits.
                 </p>
               </div>
-              
-              <div id="exhibit-2" class="tabcontent hide">
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
+            </div>
+          </div>
+
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/medici.PNG" alt="Medici Exhibition" width="300">
+                <h3>The Medici: Portraits and Politics</h3>
+                <p>Ongoing The Met Fifth Avenue</p>
               </div>
-              
-              <div id="exhibit-3" class="tabcontent hide">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
+              <div class="flip-card-back">
+                <p>
+                  Some of the greatest portraits of Western art were painted in Florence during the tumultuous years from 1512 to 1570, when the city was transformed from a republic with elected officials into a duchy ruled by the Medici family. The key figure in this transformation was Cosimo I de’ Medici, who became Duke of Florence in 1537, following the assassination of his predecessor, Alessandro de’ Medici. Cosimo shrewdly employed culture as a political tool in order to convert the mercantile city into the capital of a dynastic Medicean state, enlisting the leading intellectuals and artists of his time and promoting grand architectural, engineering, and artistic projects. 
+                </p>
               </div>
-          </section>
+            </div>
+          </div>
+
+          
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/people-first.PNG" alt="People Come First" width="300">
+                <h3>Alice Neel People Come First</h3>
+                <p>Ongoing The Met Fifth Avenue</p>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  Alice Neel: People Come First is the first museum retrospective in New York of American artist Alice Neel (1900–1984) in twenty years.
+                  Images of activists demonstrating against fascism and racism appear alongside paintings of impoverished victims of the Great Depression, as well as portraits of Neel’s neighbors in Spanish Harlem, leaders from a wide range of political organizations, queer artists and performers, and members of New York’s global diaspora. The exhibition also highlights Neel’s erotic watercolors and pastels from the 1930s, her depictions of mothers, and her paintings of nude figures (some of them visibly pregnant), all of whose candor and irreverence are without precedent in the history of Western art.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+
+
+
+
+
 
           <section class="learn">
               <h2>Learn</h2>
@@ -158,14 +274,15 @@
                <div class="videos">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/3CxZ2PrXQ1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                </div>
-               <div class="videos"></div>
+               <div class="videos">
                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hendaPFEG3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                </div>
-               <div class="videos"></div>
+               <div class="videos">
                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MQtSDLOg05c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                </div>
           </section>
-        </main>
+        </div>
+      </main>
     <script src="main.js"></script>
 </body>
 </html>

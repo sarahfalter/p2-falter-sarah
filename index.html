@@ -17,12 +17,20 @@
 
         <div class="navigation">
             <a href="index.html"><img class="logo" src="images/met-logo.png" title="The Met Logo" alt="The Met Logo"/></a>
-             <nav>
-               <ul>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Visit</a></li>
+   
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Visit</a></li>
+                    <div class="dropdown">
+                      <button id="dropbtn">Explore <i class="fa fa-caret-down"></i></button>
+                        <div id="menuDropdown" class="dropdown-content show" >
+                            <a href="#">Look Inside</a>
+                            <a href="#">Exhibitions</a>
+                            <a href="#">Learn</a>
+                        </div>
+                    </div> 
                </ul>
-             </nav>
+            </nav>
         </div>
     </header>
 
@@ -40,12 +48,12 @@
 
        <div class="main-section">
         <section class="card">
-           <div class="left-side">
+           <div class="left-side zoom" onclick="location.href='#';" style="cursor: pointer;">
              <img src="images/fifthave.jpg" alt="The Met Fifth Avenue" width="600">
              <a class="card-text-left" href="#">The Met Fifth Avenue</a>
            </div>
 
-           <div class="right-side">
+           <div class="right-side zoom" onclick="location.href='#';" style="cursor: pointer;">
                <img src="images/cloisters.jpg" alt="The Met Cloisters" width="600">
                <a class="card-text-right" href="#">The Met Cloisters</a>
            </div>
@@ -53,24 +61,26 @@
        
 
          <section class="card">
-            <div class="left-side">
+            <div class="left-side zoom" onclick="location.href='#';" style="cursor: pointer;">
               <img class="fit" src="images/venuscupid.jpg" alt="Venus and Cupid" width="600">
               <a class="card-text-left" href="#">Download our brochure</a>
             </div>
  
-            <div class="right-side">
+            <div class="right-side zoom" onclick="location.href='#';" style="cursor: pointer;">
                 <img class="fit" src="images/head.jpg" alt="Marble Head" width="600">
                 <a class="card-text-right" href="#">Plan your visit</a>
             </div>
          </section> 
 
          <section class="card">
-            <div class="left-side">
+            <div class="left-side zoom">
               <img class="fit" src="images/protest-statue.jpg" alt="Venus and Cupid" height="600">
             </div>
  
             <div class="right-side last">
-                <a class="card-text-right" href="#">Read More</a>
+                <p><h4 class="big-text">The Metropolitan Museum of Art presents over 5,000 years of art from around the world for everyone to experience and enjoy</h4><span id="dots">...</span><span id="more">Since its founding in 1870, The Met has always aspired to be more than a treasury of rare and beautiful objects. Every day, art comes alive in the Museum's galleries and through its exhibitions and events, revealing new ideas and unexpected connections across time and across cultures. The Met was founded on April 13, 1870, "to be located in the City of New York, for the purpose of establishing and maintaining in said city a Museum and library of art, of encouraging and developing the study of the fine arts, and the application of arts to manufacture and practical life, of advancing the general knowledge of kindred subjects, and, to that end, of furnishing popular instruction."</span></p>
+
+                <button id="myBtn">Read more</button>
             </div>
          </section> 
         </div>
@@ -122,5 +132,6 @@
             <p>This site was developed for educational purposes.</p>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
