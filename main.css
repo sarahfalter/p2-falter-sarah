@@ -44,13 +44,14 @@ h1 {
 
 li {
     list-style-type: none;
+    font-family: proxima-nova, sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 
-h2, h2, h4, h5, p, a, span {
+h2, h2, h3, h4, h5, p, a, span {
     font-family: proxima-nova, sans-serif;
 }
 
@@ -102,7 +103,8 @@ h2, h2, h4, h5, p, a, span {
 
 .cta {
     display: block;
-    border: 1px solid #f7f7f7;
+    font-weight: bold;
+    border: 2px solid #f7f7f7;
     border-radius: 4px;
     width: 190px;
     padding: 3px 0;
@@ -152,7 +154,7 @@ a.purchase-ticket:before {
     display: flex;
     justify-content: center;
     margin: 3% auto;
-    box-shadow: 6px 5px 5px #00000030;
+    box-shadow: 2px 2px 10px #00000030;
     max-width: 1200px;
     width: 100%;
     overflow: hidden;
@@ -165,12 +167,6 @@ a.purchase-ticket:before {
 .card img {
     height: 100%;
 }
-
-/**.left-side:hover,
-.right-side:hover {
-    transform: scale(1.1);
-    transition: .3s ease-out;
-}**/
 
 .left-side, .right-side { 
     position: relative;
@@ -225,7 +221,7 @@ h4.big-text {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    height: 400px;
+    height: 500px;
 }
 
 .hero-sub h1 {
@@ -235,13 +231,7 @@ h4.big-text {
     text-align: center;
 }
 
-.hero-line {
-    border-bottom: 2px solid white;
-    width: 125px;
-    padding-top: 1%;
-    display: block;
-    margin: 0 auto;
-}
+
 
 .wrapper h2, .exhibits h2, .h-ex {
     margin-bottom: 3%;
@@ -462,13 +452,11 @@ Slideshow Styling
   }
 /************Horizontal Tabbed Content Styling***********/
 
-  /* Style the tab */
 .tab {
     overflow: hidden;
     background-color: #f7f7f7;
   }
   
-  /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: inherit;
     float: left;
@@ -479,17 +467,14 @@ Slideshow Styling
     transition: 0.3s;
   }
   
-  /* Change background color of buttons on hover */
   .tab button:hover {
     background-color: #ddd;
   }
   
-  /* Create an active/current tablink class */
   .tab button.active {
     background-color: #ccc;
   }
-  
-  /* Style the tab content */
+
   .tabcontent {
     display: none;
     padding: 6px 12px;
@@ -501,6 +486,78 @@ Slideshow Styling
       display: block;
       margin-top: 10%;
   }
+
+  /*****************************************************************
+
+                                                       Visit Page
+
+*******************************************************************/
+.visit-wrapper {
+    max-width: 1000px;
+    padding: 5% 0;
+}
+
+article {
+    background: #CFE4FF;
+}
+article, aside {
+    padding: 4% 2%;
+    color: #333333;
+}
+.bold {
+    font-weight: bolder;
+}
+
+.space {
+    margin-bottom: 4%;
+}
+
+article a {
+    border: 1px solid #333333;
+    color: #333333;
+    border-radius: 4px;
+    padding: 1% 3%;
+    margin-top: 3%;
+}
+
+
+article a:hover {
+    border: 1px solid #E6032D;
+    background: #E6032D;
+    color: #f7f7f7;
+    transition: .5s ease;
+}
+.location-card {
+    display: flex;
+    flex-flow: column wrap;
+    background: #f7f7f7;
+    box-shadow: 4px 3px 19px #33333338;
+    max-width: 1000px;
+    margin-bottom: 5%;
+}
+
+.l-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.l-right {
+    font-family: proxima-nova, sans-serif;
+    padding: 3%;
+}
+
+.l-right h3 {
+    color: #E6032D;
+}
+
+.guidelines {
+    background: #333333;
+    color: #CFE4FF;
+    padding: 3% 2%;
+    line-height: 2;
+    margin-top: 5%;
+}
+
 
 /***********************************************************************
 
@@ -515,19 +572,41 @@ Slideshow Styling
     text-align: center;
     line-height: 2.2;
     padding: 4% 0;
-    box-shadow: 2px 13px 18px #00000099;
 }
 
 .footer-left a {
     color: #333333;
     font-weight: bold;
     line-height: 2.5;
+    position: relative;
 }
+.footer-left ul li a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333333;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-left ul li a:hover:before {
+      visibility: visible;
+      width: 100%;
+    }
 
 .footer-socials a {
     font-size: 2rem;
     color: #333333;
     margin: 0 1%;
+
+}
+
+.footer-socials a:hover {
+    color: #CFE4FF;
+    transition: .5s ease;
 }
 
 .footer-bottom {
@@ -555,7 +634,19 @@ Slideshow Styling
   }  
 }
 
+@media (min-width: 500px) {
+    .location-card {
+        flex-flow: row wrap;
+    }
 
+    .l-left, .l-right {
+        width: 50%;
+    }
+
+    .hero-sub h1 {
+        font-size: 5rem;
+    }
+}
 /**********************************600 MINWIDTH***********/
 @media (min-width: 600px) {
 
@@ -572,7 +663,7 @@ Slideshow Styling
 }
 
 .wrapper {
-    max-width: 900px;
+    max-width: 1200px;
     width: 90%;
 }
 
@@ -583,7 +674,7 @@ Slideshow Styling
 .desktop-exhibits {
     display: flex;
     flex-flow: row wrap;
-    max-width: 860px;
+    max-width: 1200px;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -596,7 +687,7 @@ Slideshow Styling
 
 .flip-card {
     background-color: transparent;
-    max-width: 400px;
+    max-width: 600px;
     width: 45%;
     height: 500px;
     border: 1px solid #f1f1f1;
@@ -666,7 +757,10 @@ iframe {
     .navigation {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        height: 85px;
+        align-items: center;
     }
+    
     .show {
         display: block;
     }
@@ -681,7 +775,8 @@ iframe {
     }
       .navbar a {
         float: left;
-        font-size: 16px;
+        font-size: 1.2rem;
+        font-weight: bolder;
         color: #E6032D;
         text-align: center;
         padding: 14px 16px;
@@ -712,11 +807,12 @@ iframe {
       }
       
       .dropdown #dropbtn {
-        font-size: 15px;  
+        font-size: 1.1rem;  
+        font-weight: bolder;
         border: none;
         outline: none;
         color: #E6032D;
-        padding: 18px 16px;
+        padding: 19px 16px;
         background-color: inherit;
       }
    
@@ -738,13 +834,6 @@ iframe {
         text-align: left;
       }
       
-      /*.dropdown-content a:hover {
-        background-color: #ddd;
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }*/
     nav ul li a {
         color: #E6032D;
         position: relative;
@@ -761,13 +850,23 @@ iframe {
     .card-text-left, .card-text-right {
         font-size: 1.5rem;
     }
-    
+
+    .visit-wrapper {
+        margin: 0 auto;
+    }
+    .location-card {
+    flex-flow: row wrap;
+    }
 }
 
 /**********************************850 MINWIDTH***********/
 @media (min-width: 850px) {
     .hero {
-        min-height: 75vh;
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
     }
     .desktop-footer {
         display: grid;
@@ -794,29 +893,12 @@ iframe {
 /**********************************1000 MINWIDTH***********/
 @media (min-width: 1000px) {
  
-.hero {
-    min-height: 80vh;
-}
-
-
-
-h1 {
-    font-size: 4rem;
-    padding-top: 15%;
-}
-
-.cta {
-    display: block;
-    border: 1px solid #f7f7f7;
-    border-radius: 4px;
-    padding: 3px 0;
-}
 
 .cta:hover {
     background: #E6032D;
-    color: #CFE4FF;
+    color: #f7f7f7;
     transition: all 0.4s ease;
-    border: 1px solid #E6032D;
+    border: 2px solid #E6032D;
   }
 }
 
