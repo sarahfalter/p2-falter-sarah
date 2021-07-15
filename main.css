@@ -77,6 +77,58 @@ h2, h2, h3, h4, h5, p, a, span {
     padding: 1%;
 }
 
+.hamburger, .cross, .mobile-menu {
+    display: block;
+}
+
+.navigation {
+    position: relative;
+}
+
+/************************** Hamburger menu *********************/
+.hamburger{
+    background:none;
+    position:absolute;
+    top:0;
+    right:25px;
+    line-height:50px;
+    padding: 1px 10px 2px 15px;
+    color: #E6032D;
+    border:0;
+    font-size:1.8em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+  .cross{
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    padding:1px 15px 0px 15px;
+    color: #E6032D;
+    border:0;
+    font-size:3.5em;
+    line-height:65px;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+  
+  .mobile-menu {z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f7f7f7;  position:absolute; text-align:center; font-size:1em; }
+  .mobile-menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+  .mobile-menu  li {display: block;   padding:15px 0 15px 0; border-bottom: 1px solid #E6032D;}
+  .mobile-menu  li:hover{display: block;  background:#ffffff; padding:15px 0 15px 0; border-bottom:white 1px solid;}
+  .mobile-menu  ul li a { text-decoration:none;  margin: 0px; color:#E6032D;}
+  .mobile-menu  ul li a:hover {  color: #000;  text-decoration:none;}
+  .mobile-menu  a{text-decoration:none; color:#666;}
+  .mobile-menu  a:hover{text-decoration:none; color:#333333;}
+  
+  /***************** Hamburger menu END ********************************/
+  
+
 /******************************************************************
 
                                                    Homepage Styling
@@ -541,7 +593,9 @@ Slideshow Styling
     max-width: 1000px;
     padding: 5% 0;
 }
-
+.visit-wrapper h2{
+    font-size: 2.5rem;
+}
 article {
     background: #CFE4FF;
 }
@@ -603,9 +657,17 @@ article a:hover {
 .guidelines {
     background: #333333;
     color: #CFE4FF;
-    padding: 3% 2%;
+    padding: 7% 3%;
     line-height: 2;
     margin-top: 5%;
+}
+
+.text-wrapper h3 {
+    font-size: 2rem;
+}
+
+.text-wrapper ul li {
+    padding-bottom: 1%;
 }
 
 
@@ -744,6 +806,10 @@ article a:hover {
         grid-template-columns: 1fr 1fr;
         height: 85px;
         align-items: center;
+    }
+
+    .hamburger, .cross, .mobile-menu {
+        display: none;
     }
     
     .show {
@@ -962,12 +1028,24 @@ article a:hover {
     .videos h3 {
         font-size: 3rem;
     }
+    .visit-wrapper h2{
+        font-size: 3rem;
+    }
 
     #map {
         width: 800px;
         height: 600px;
         margin: 0 auto;
     }
+
+    .text-wrapper {
+        width: 75%;
+    }
+
+    .text-wrapper h3 {
+        font-size: 3rem;
+    }
+
 }
 
 

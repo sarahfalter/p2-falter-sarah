@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/mor6xox.css">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/312ed6c8c1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
 </head>
 <body>
     <header>
@@ -18,7 +21,7 @@
         <div class="navigation">
             <a href="index.html"><img class="logo" src="images/met-logo.png" title="The Met Logo" alt="The Met Logo"/></a>
    
-            <nav class="navbar">
+            <nav class="navbar desktop-menu">
                 <ul>
                     <li><a href="#home">Visit</a></li>
                     <div class="dropdown">
@@ -30,6 +33,17 @@
                         </div>
                     </div> 
                </ul>
+            </nav>
+
+            
+			<button class="hamburger">&#9776;</button>
+			<button class="cross">&#735;</button>
+
+            <nav class="mobile-menu">
+                <ul>
+					<li><a href="characterbio.html">Characters</a></li>
+					<li><a href="tours.html">Productions</a></li>
+				</ul>
             </nav>
         </div>
     </header>
@@ -132,6 +146,7 @@
             <p>This site was developed for educational purposes.</p>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Hamburger.js"></script>
 </body>
 </html>

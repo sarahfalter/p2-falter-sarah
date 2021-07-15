@@ -13,6 +13,10 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -37,6 +41,16 @@
                </ul>
             </nav>
         </div>
+
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="characterbio.html">Characters</a></li>
+                <li><a href="tours.html">Productions</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="hero-sub">         
@@ -111,6 +125,7 @@
         </section>
 
         <section class="guidelines">
+            <div class="text-wrapper">
             <h3>Visitor Guidelines</h3>
             <p class="bold">To ensure that we are providing a safe environment for all, the Museum has the following additional protocols in place:</p>
             <ul>
@@ -138,6 +153,7 @@
             </ul>
             <p class="bold">Please check the New York State Covid-19 Travel Advisory for the latest guidelines on visiting New York. Some visitors may be required to complete the online Travel Health Form.
             </p>
+        </div>
         </section>
     </main>
 
@@ -186,7 +202,10 @@
              <p>This site was developed for educational purposes.</p>
          </div>
      </footer>
-     <script src="map.js"></script>
+
+     <script src="js/Hamburger.js"></script>
+     <script src="js/map.js"></script>
+
      
 </body>
 </html>
