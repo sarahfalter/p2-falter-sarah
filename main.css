@@ -553,6 +553,7 @@ Slideshow Styling
     padding: 6px 12px;
     border: 1px solid #f7f7f7;
     border-top: none;
+    margin-bottom: 8%;
   }
   
   .learn h2 {
@@ -565,6 +566,7 @@ Slideshow Styling
       border: 1px solid #E6032D;
       border-radius: 2px;
       font-weight: bolder;
+      font-size: 0.8rem;
       padding: 1% 2%;
   }
 
@@ -728,6 +730,10 @@ article a:hover {
     padding: 2% 0;
 }
 
+.footer-bottom p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 
 
@@ -748,6 +754,10 @@ article a:hover {
   #map {
     width: 450px;
     height: 300px;
+}
+
+a.explore-link {
+    font-size: 1rem;
 }
 }
 
