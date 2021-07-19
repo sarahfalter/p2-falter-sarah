@@ -10,12 +10,14 @@
     <script src="https://kit.fontawesome.com/312ed6c8c1.js" crossorigin="anonymous"></script>
     
 
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+   
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
@@ -30,20 +32,20 @@
         <div class="navigation">
             <a href="index.html"><img class="logo" src="images/met-logo.png" title="The Met Logo" alt="The Met Logo"/></a>
    
-            <nav class="navbar">
+            <nav class="navbar desktop-menu">
                 <ul>
                     <li><a href="visit.html">Visit</a></li>
-                    <div class="dropdown">
-                      <button id="dropbtn">Explore <i class="fa fa-caret-down"></i></button>
+                    <li class="dropdown">
+                      <a href="explore.html" id="dropbtn">Explore <i class="fa fa-caret-down"></i></a>
                         <div id="menuDropdown" class="dropdown-content show" >
-                            <a href="#">Look Inside</a>
-                            <a href="#">Exhibitions</a>
-                            <a href="#">Learn</a>
+                            <a href="explore.html#inside-look">Look Inside</a>
+                            <a href="explore.html#exhibit-look">Exhibitions</a>
+                            <a href="explore.html#inside-learn">Learn</a>
                         </div>
-                    </div> 
+                    </li> 
                </ul>
             </nav>
-        </div>
+        
 
         <button class="hamburger">&#9776;</button>
         <button class="cross">&#735;</button>
@@ -54,6 +56,7 @@
                 <li><a href="visit.html">Visit</a></li>
             </ul>
         </nav>
+      </div>
     </header>
 
     <div class="hero-sub">         
@@ -113,7 +116,7 @@
                    <img src="images/cloisters-location.jpg" alt="The Met Cloisters" width="500">
                 </div>
                 <div class="l-right">
-                  <h3>The Met Fifth Avenue</h3>
+                  <h3>The Met Cloisters</h3>
                   <ul>
                       <li>99 Margaret Corbin Drive</li>
                       <li>Fort Tryon Park</li>
@@ -191,8 +194,8 @@
  
              <div class="footer-socials">
                 <h4>Follow Us</h4>
-                 <a href="https://www.facebook.com/metmuseum/"><i class="fab fa-facebook"></i><a>
-                 <a href="https://www.instagram.com/metmuseum/"><i class="fab fa-instagram"></i><a></a>
+                 <a href="https://www.facebook.com/metmuseum/"><i class="fab fa-facebook"></i></a>
+                 <a href="https://www.instagram.com/metmuseum/"><i class="fab fa-instagram"></i></a>
                  <a href="https://twitter.com/metmuseum?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
                  <a href="https://www.pinterest.com/metmuseum/_created/"><i class="fab fa-pinterest"></i></a>
                  <a href="https://www.youtube.com/channel/UCDlz9C2bhSW6dcVn_PO5mYw"><i class="fab fa-youtube"></i></a>
@@ -207,6 +210,7 @@
      </footer>
 
      <script src="js/Hamburger.js"></script>
+     <script src="js/nav.js"></script>
      <script src="js/map.js"></script>
 
      

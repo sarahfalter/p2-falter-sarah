@@ -198,15 +198,14 @@ a.purchase-ticket:before{
 }
 .last {
     background: #CFE4FF;
-    width: 600px;
+    width: 100%;
 }
 /***********CARD SECTION**/
 
 .card {
     display: flex;
     justify-content: center;
-    margin: 3% auto;
-    box-shadow: 2px 2px 10px #00000030;
+    margin: 0 auto;
     max-width: 1200px;
     width: 100%;
     overflow: hidden;
@@ -223,6 +222,7 @@ a.purchase-ticket:before{
 .left-side, .right-side { 
     position: relative;
     overflow: hidden;
+    margin: 3% 0;
 }
 .card-text-left,
 .card-text-right {
@@ -279,7 +279,7 @@ h4.big-text {
 .hero-sub h1 {
     color: #f7f7f7;
     padding-top: 200px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -659,7 +659,7 @@ article a:hover {
 .guidelines {
     background: #333333;
     color: #CFE4FF;
-    padding: 7% 3%;
+    padding: 4% 3%;
     line-height: 2;
     margin-top: 5%;
 }
@@ -719,7 +719,7 @@ article a:hover {
 }
 
 .footer-socials a:hover {
-    color: #CFE4FF;
+    color: #E6032D;
     transition: .5s ease;
 }
 
@@ -770,6 +770,11 @@ a.explore-link {
         width: 50%;
     }
 
+    .l-right {
+        text-align: center;
+        padding-top: 10%;
+    }
+
     .hero-sub h1 {
         font-size: 5rem;
     }
@@ -818,6 +823,10 @@ a.explore-link {
         align-items: center;
     }
 
+    .logo {
+        width: 75px;
+    }
+
     .hamburger, .cross, .mobile-menu {
         display: none;
     }
@@ -829,7 +838,7 @@ a.explore-link {
         display: block;
         overflow: hidden;
         justify-self: flex-end;
-        margin-right: 30px;
+        margin-right: 60px;
       }
     .navbar ul {
         display: inline-flex;
@@ -863,23 +872,14 @@ a.explore-link {
         }
       
       .dropdown {
-        float: left;
         overflow: hidden;
       }
       
-      .dropdown #dropbtn {
-        font-size: 1.1rem;  
-        font-weight: bolder;
-        border: none;
-        outline: none;
-        color: #E6032D;
-        padding: 19px 16px;
-        background-color: inherit;
-      }
    
       .dropdown-content {
         display: none;
         position: absolute;
+        top: 90%;
         background-color: #f9f9f9;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -894,7 +894,7 @@ a.explore-link {
         display: block;
         text-align: left;
       }
-      
+   
     nav ul li a {
         color: #E6032D;
         position: relative;
@@ -1023,7 +1023,7 @@ a.explore-link {
         box-shadow: 2px 13px 5px #0000004a;
     }
     .footer-left {
-        line-height: 4.5;
+        line-height: 4.2;
     }
 
     .footer-socials {
@@ -1032,6 +1032,9 @@ a.explore-link {
         text-align: left;
     }
 
+    .l-right {
+        font-size: 1.2rem;
+    }
     .wrapper h2, .h-ex {
         font-size: 3.5rem;
     }

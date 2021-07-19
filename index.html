@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/mor6xox.css">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/312ed6c8c1.js" crossorigin="anonymous"></script>
+
+    <!--For Hamburger Menu Not Part of Required UI Elements-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
@@ -20,18 +22,17 @@
 
         <div class="navigation">
             <a href="index.html"><img class="logo" src="images/met-logo.png" title="The Met Logo" alt="The Met Logo"/></a>
-   
             <nav class="navbar desktop-menu">
                 <ul>
                     <li><a href="visit.html">Visit</a></li>
-                    <div class="dropdown">
-                      <button id="dropbtn">Explore <i class="fa fa-caret-down"></i></button>
+                    <li class="dropdown">
+                      <a href="explore.html" id="dropbtn">Explore <i class="fa fa-caret-down"></i></a>
                         <div id="menuDropdown" class="dropdown-content show" >
-                            <a href="#">Look Inside</a>
-                            <a href="#">Exhibitions</a>
-                            <a href="#">Learn</a>
+                            <a href="explore.html#inside-look">Look Inside</a>
+                            <a href="explore.html#exhibit-look">Exhibitions</a>
+                            <a href="explore.html#inside-learn">Learn</a>
                         </div>
-                    </div> 
+                    </li> 
                </ul>
             </nav>
 
@@ -92,7 +93,7 @@
             </div>
  
             <div class="right-side last">
-                <p><h4 class="big-text">The Metropolitan Museum of Art presents over 5,000 years of art from around the world for everyone to experience and enjoy</h4><span id="dots">...</span><span id="more">Since its founding in 1870, The Met has always aspired to be more than a treasury of rare and beautiful objects. Every day, art comes alive in the Museum's galleries and through its exhibitions and events, revealing new ideas and unexpected connections across time and across cultures. The Met was founded on April 13, 1870, "to be located in the City of New York, for the purpose of establishing and maintaining in said city a Museum and library of art, of encouraging and developing the study of the fine arts, and the application of arts to manufacture and practical life, of advancing the general knowledge of kindred subjects, and, to that end, of furnishing popular instruction."</span></p>
+                <h4 class="big-text">The Metropolitan Museum of Art presents over 5,000 years of art from around the world for everyone to experience and enjoy</h4><span id="dots">...</span><span id="more">Since its founding in 1870, The Met has always aspired to be more than a treasury of rare and beautiful objects. Every day, art comes alive in the Museum's galleries and through its exhibitions and events, revealing new ideas and unexpected connections across time and across cultures. The Met was founded on April 13, 1870, "to be located in the City of New York, for the purpose of establishing and maintaining in said city a Museum and library of art, of encouraging and developing the study of the fine arts, and the application of arts to manufacture and practical life, of advancing the general knowledge of kindred subjects, and, to that end, of furnishing popular instruction."</span>
 
                 <button id="myBtn">Read more</button>
             </div>
@@ -132,8 +133,8 @@
 
             <div class="footer-socials">
                <h4>Follow Us</h4>
-                <a href="https://www.facebook.com/metmuseum/"><i class="fab fa-facebook"></i><a>
-                <a href="https://www.instagram.com/metmuseum/"><i class="fab fa-instagram"></i><a></a>
+                <a href="https://www.facebook.com/metmuseum/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/metmuseum/"><i class="fab fa-instagram"></i></a>
                 <a href="https://twitter.com/metmuseum?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.pinterest.com/metmuseum/_created/"><i class="fab fa-pinterest"></i></a>
                 <a href="https://www.youtube.com/channel/UCDlz9C2bhSW6dcVn_PO5mYw"><i class="fab fa-youtube"></i></a>
@@ -146,6 +147,7 @@
             <p>This site was developed for educational purposes.</p>
         </div>
     </footer>
+    <script src="js/nav.js"></script>
     <script src="js/main.js"></script>
     <script src="js/Hamburger.js"></script>
 </body>
