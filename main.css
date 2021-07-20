@@ -149,11 +149,16 @@ h2, h2, h3, h4, h5, p, a, span {
 }
 
 .hero h1 {
+    animation: fadein 1.2s ease;
     padding-top: 200px;
-    font-size: 3rem;
+    font-size: 3rem;  
+
 }
 
 .cta {
+    animation: fadein 1s ease;
+    animation-delay: .2s;
+    animation-fill-mode: both;
     display: block;
     font-weight: bold;
     border: 2px solid #f7f7f7;
@@ -790,12 +795,21 @@ a.explore-link {
      min-height: 65vh;
 }
 
+.open h2 {
+    font-size: 1.8rem;
+}
+.card {
+    margin: 3% auto;
+    box-shadow: 1px 1px 6px #33333399;
+}
 .left-side, .right-side {
     width: 50%;
+    margin: 0;
 }
 
 .card img {
     width: 100%;
+    
 }
 
 .wrapper {
@@ -1064,7 +1078,11 @@ a.explore-link {
 
 /**********************************1000 MINWIDTH***********/
 @media (min-width: 1000px) {
- 
+
+.cta {
+    width: 230px;
+    font-size: 1.2rem;
+}
  
 .cta:hover {
     background: #E6032D;
@@ -1103,3 +1121,23 @@ a.explore-link {
     }
   
 }
+
+
+
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+		transform: scale(0.1);
+
+
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+
+	}
+
+}
+
